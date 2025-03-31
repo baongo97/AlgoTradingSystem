@@ -43,13 +43,5 @@ public class RSICalculator {
         double rs = (loss == 0) ? 100 : gain / loss;
         return 100 - (100 / (1 + rs));
     }
-    
-    public static void main(String[] args) {
-        double[] prices = {45.64, 46.22, 46.41, 46.03, 45.89, 46.08, 45.84, 45.42, 45.10, 44.83, 44.33, 43.61, 44.15, 44.09, 44.34};
-        int period = 14;
-        
-        double rsi = calculateRSI(prices, period);
-        System.out.println("RSI: " + rsi);
-    }
 }
 
